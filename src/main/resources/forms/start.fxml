@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.Game66">
+   <left>
+      <AnchorPane prefHeight="759.0" prefWidth="255.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelUserScore" layoutX="105.0" layoutY="483.0" text="Ppoints" />
+            <Button fx:id="buttonTrumpCard" alignment="CENTER_RIGHT" layoutX="70.0" layoutY="182.0" mnemonicParsing="false" prefHeight="130.0" prefWidth="190.0" style="-fx-background-color: #37adab; -fx-background-radius: .8em; -fx-text-fill: white;" text="Trump" />
+            <Label layoutX="14.0" layoutY="483.0" text="Your points:" />
+            <Button fx:id="buttonDeck" layoutX="14.0" layoutY="152.0" mnemonicParsing="false" prefHeight="190.0" prefWidth="130.0" text="Deck" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="603.0" prefWidth="934.0" style="-fx-background-radius: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonCard2" layoutX="192.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCardPlay" prefHeight="190.0" prefWidth="130.0" style="-fx-background-color: #37adab; -fx-background-radius: .8em;" text="2" />
+            <Button fx:id="buttonCard3" layoutX="332.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCardPlay" prefHeight="190.0" prefWidth="130.0" style="-fx-background-color: #37adab; -fx-background-radius: .8em;" text="3" />
+            <Button fx:id="buttonCard4" layoutX="472.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCardPlay" prefHeight="190.0" prefWidth="130.0" style="-fx-background-color: #37adab; -fx-background-radius: .8em;" text="4" />
+            <Button fx:id="buttonCard5" layoutX="612.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCardPlay" prefHeight="190.0" prefWidth="130.0" style="-fx-background-color: #37adab; -fx-background-radius: .8em;" text="5" />
+            <Button fx:id="buttonCard6" layoutX="752.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCardPlay" prefHeight="190.0" prefWidth="130.0" style="-fx-background-color: #37adab; -fx-background-radius: .8em;" text="6" />
+            <Button fx:id="buttonCard1" layoutX="52.0" layoutY="322.0" mnemonicParsing="false" onAction="#onCardPlay" prefHeight="190.0" prefWidth="130.0" style="-fx-background-radius: .8em; -fx-background-color: #37adab;" text="1" />
+            <Button fx:id="buttonOpponentCard" layoutX="402.0" layoutY="64.0" mnemonicParsing="false" prefHeight="190.0" prefWidth="130.0" />
+            <Label layoutX="280.0" layoutY="149.0" text="Opponent card:" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="138.0" prefWidth="1194.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="59.0" text="Opponent points:" />
+            <Label fx:id="labelDummyScore" layoutX="138.0" layoutY="59.0" text="Dpoints" />
+            <Label layoutX="646.0" layoutY="43.0" text="Opponent" textFill="#d32626">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonPlayAgain" layoutX="936.0" layoutY="31.0" mnemonicParsing="false" onAction="#onPlayAgain" text="Play Again" textFill="#0800f8">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,13 @@
+game\Game66.class
+players\UserPlayer.class
+players\ComputerPlayer.class
+utils\FormOpener.class
+enums\CardSuit.class
+main\Main.class
+cards\Card.class
+cards\DeckGenerator.class
+players\Player.class
+main\App.class
+module-info.class
+enums\CardRank.class
+enums\CardColor.class
