@@ -220,6 +220,9 @@ public class Game66 implements Initializable {
 
         if(checkIfGameOver() == true) { // проверка дали след разиграването има победител
             buttonPlayAgain.setVisible(true);
+            for(Button button : buttonsList) {
+                button.setDisable(true);
+            }
         }
         else {
             drawNewCardsAndUpdateButtons(buttonClicked);  // "теглене" на нови карти
